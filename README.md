@@ -25,3 +25,13 @@ Fazer uma aplicação parecida com o GymPass.
 - [ ] Os dados da aplicação devem ser persistidos em PostgreSQL.
 - [ ] Todas as listas de dados precisam estar paginadas com 20 itens por página.
 - [ ] O usuário deve ser identificado através de JWT.
+
+
+## Docker
+1. Adicionamos imagem da `bitnami/postgresql`, por ter configurações de segurança mais avançadas que a imagem oficial do postgresql.
+
+## Docker Compose
+1. Dita quais são os containers que serão utilizados na aplicação. Sem a necessidade de criar tudo manualmente.
+1.1. `docker compose up -d` para subir os containers em background.
+1.2. `docker compose down` para deletar os containers.
+1.3. `docker compose stop` para parar os containers.
