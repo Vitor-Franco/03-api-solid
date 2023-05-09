@@ -1,3 +1,4 @@
+Fazer uma aplicação parecida com o GymPass.
 
 ## RFs (Requisitos Funcionais)
 - [ ] Deve ser possível se cadastrar.
