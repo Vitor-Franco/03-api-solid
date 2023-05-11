@@ -1,7 +1,7 @@
 Fazer uma aplicação parecida com o GymPass.
 
 ## RFs (Requisitos Funcionais)
-- [ ] Deve ser possível se cadastrar.
+- [X] Deve ser possível se cadastrar.
 - [ ] Deve ser possível se autenticar.
 - [ ] Deve ser possível obter o perfil de um usuário logado.
 - [ ] Deve ser possível obter o número de check-ins realizados pelo usuário logado.
@@ -13,7 +13,7 @@ Fazer uma aplicação parecida com o GymPass.
 - [ ] Deve ser possível cadastrar uma academia.
 
 ## RNs (Regras de Negócio)
-- [ ] O usuário não deve poder se cadastrar com um e-mail já existente.
+- [X] O usuário não deve poder se cadastrar com um e-mail já existente.
 - [ ] O usuário não pode fazer 2 check-ins em um mesmo dia.
 - [ ] O usuário não pode fazer check-in se não estiver a 100 metros da academia.
 - [ ] O check-in só pode ser validado até 20 minutos após criado.
@@ -21,8 +21,8 @@ Fazer uma aplicação parecida com o GymPass.
 - [ ] A academia só pode ser cadastrada por administradores.
 
 ## RNFs (Requisitos Não Funcionais)
-- [ ] A senha do usuário deve ser criptografada.
-- [ ] Os dados da aplicação devem ser persistidos em PostgreSQL.
+- [X] A senha do usuário deve ser criptografada.
+- [X] Os dados da aplicação devem ser persistidos em PostgreSQL.
 - [ ] Todas as listas de dados precisam estar paginadas com 20 itens por página.
 - [ ] O usuário deve ser identificado através de JWT.
 
