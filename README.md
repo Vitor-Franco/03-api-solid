@@ -35,3 +35,6 @@ Fazer uma aplicação parecida com o GymPass.
 1.1. `docker compose up -d` para subir os containers em background.
 1.2. `docker compose down` para deletar os containers.
 1.3. `docker compose stop` para parar os containers.
+
+## Solid
+1. D - Dependency Inversion Principle
