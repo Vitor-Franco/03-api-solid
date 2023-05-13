@@ -38,3 +38,11 @@ Fazer uma aplicação parecida com o GymPass.
 
 ## Solid
 1. D - Dependency Inversion Principle
+
+## TDD
+1. Test Driven Development -> Desenvolvimento guiado por testes.
+1.1. Uso altamente recomendado para features maiores, que demandam muitas regras.
+2. Red, Green, Refactor
+1.2. Red: Escrever um teste que falhe.
+1.3. Green: Escrever o mínimo de código que faça o teste passar.
+1.4. Refactor: Refatorar o código para melhorar a legibilidade e performance.
