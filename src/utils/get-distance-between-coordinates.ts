@@ -3,11 +3,12 @@ export interface Coordinate {
   longitude: number
 }
 
-/*
-  This function calculates the distance between two coordinates in kilometers.
-
-  returns: number
-*/
+/**
+ * This function calculates the distance between two coordinates in kilometers.
+ * @param {Coordinate} from - The base coordinate.
+ * @param {Coordinate} to - The second coordinate.
+ * @returns number in kilometers.
+ */
 export function getDistanceBetweenCoordinates(
   from: Coordinate,
   to: Coordinate,
