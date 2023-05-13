@@ -17,8 +17,8 @@ describe('Check-in Use Case', () => {
     gymsRepository.gyms.push({
       id: 'gym-id',
       title: 'Gym Title',
-      latitude: new Decimal(0),
-      longitude: new Decimal(0),
+      latitude: new Decimal(-27.2092052),
+      longitude: new Decimal(-49.6401091),
       description: '',
       phone: '',
     })
@@ -51,14 +51,13 @@ describe('Check-in Use Case', () => {
       userLongitude: -49.6401091,
     })
 
-    await expect(
-      async () =>
-        await sut.execute({
-          gymId: 'gym-id',
-          userId: 'user-id',
-          userLatitude: -27.2092052,
-          userLongitude: -49.6401091,
-        }),
+    await expect(() =>
+      sut.execute({
+        gymId: 'gym-id',
+        userId: 'user-id',
+        userLatitude: -27.2092052,
+        userLongitude: -49.6401091,
+      }),
     ).rejects.toBeInstanceOf(Error)
   })
 
@@ -82,5 +81,25 @@ describe('Check-in Use Case', () => {
     })
 
     expect(checkIn.id).toBeTruthy()
+  })
+
+  it('should not be able to check in on a distant gym', async () => {
+    gymsRepository.gyms.push({
+      id: 'gym-2',
+      title: 'Gym Title',
+      latitude: new Decimal(-27.0747279),
+      longitude: new Decimal(-49.4889672),
+      description: '',
+      phone: '',
+    })
+
+    await expect(() =>
+      sut.execute({
+        gymId: 'gym-2',
+        userId: 'user-id',
+        userLatitude: -27.2092052,
+        userLongitude: -49.6401091,
+      }),
+    ).rejects.toBeInstanceOf(Error)
   })
 })
