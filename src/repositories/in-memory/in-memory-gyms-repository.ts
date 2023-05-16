@@ -30,4 +30,10 @@ export class InMemoryGymsRepository implements GymsRepository {
 
     return gym
   }
+
+  async searchMany(query: string, page: number): Promise<Gym[]> {
+    return this.gyms
+      .filter((gym) => gym.title.toLowerCase().includes(query.toLowerCase()))
+      .slice((page - 1) * 20, page * 20)
+  }
 }
