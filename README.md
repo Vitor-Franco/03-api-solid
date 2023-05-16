@@ -4,7 +4,7 @@ Fazer uma aplicação parecida com o GymPass.
 - [X] Deve ser possível se cadastrar.
 - [X] Deve ser possível se autenticar.
 - [X] Deve ser possível obter o perfil de um usuário logado.
-- [ ] Deve ser possível obter o número de check-ins realizados pelo usuário logado.
+- [x] Deve ser possível obter o número de check-ins realizados pelo usuário logado.
 - [x] Deve ser possível o usuário obter seu histórico de check-ins.
 - [ ] Deve ser possível o usuário buscar por academias próximas.
 - [ ] Deve ser possível o usuário buscar academias por nome.
