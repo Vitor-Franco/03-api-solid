@@ -9,15 +9,6 @@ describe('SearchGyms Use Case', () => {
   beforeEach(async () => {
     gymsRepository = new InMemoryGymsRepository()
     sut = new SearchGymsUseCase(gymsRepository)
-
-    // await gymsRepository.create({
-    //   id: 'gym-id',
-    //   title: 'Gym Title',
-    //   latitude: -27.2092052,
-    //   longitude: -49.6401091,
-    //   description: '',
-    //   phone: '',
-    // })
   })
 
   it('should be able to search for gyms', async () => {

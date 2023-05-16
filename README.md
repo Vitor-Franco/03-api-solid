@@ -6,7 +6,7 @@ Fazer uma aplicação parecida com o GymPass.
 - [X] Deve ser possível obter o perfil de um usuário logado.
 - [x] Deve ser possível obter o número de check-ins realizados pelo usuário logado.
 - [x] Deve ser possível o usuário obter seu histórico de check-ins.
-- [ ] Deve ser possível o usuário buscar por academias próximas.
+- [X] Deve ser possível o usuário buscar por academias próximas (até 10km).
 - [x] Deve ser possível o usuário buscar academias por nome.
 - [x] Deve ser possível o usuário realizar um check-in em uma academia.
 - [ ] Deve ser possível validar o check-in do usuário.
