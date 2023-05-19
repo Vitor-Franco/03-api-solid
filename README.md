@@ -57,3 +57,6 @@ Usuário faz login, envia usuário e senha, o back-end cria um token ÚNICO, nã
 Estrutura do Token: `Cabeçalho` + `Payload` + `Assinatura`
 Email/Senha -> (header.payload.signature)
 - `Chave secreta`: É uma string que só o back-end conhece. - 1498jxfm982jdfkljsflkasjdlfksa
+
+## RBAC (Role-Based Access Control)
+é um modelo de controle de acesso baseado em funções, onde as permissões são atribuídas com base no papel ou função que um usuário possui dentro de uma organização.

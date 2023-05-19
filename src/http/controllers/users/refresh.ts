@@ -5,20 +5,26 @@ export async function refresh(request: FastifyRequest, reply: FastifyReply) {
     onlyCookie: true, // só verifica o cookie, não verifica o header (setamos a configuração em app.ts)
   })
 
+  const { sub, role } = request.user
+
   const token = await reply.jwtSign(
-    {},
+    {
+      role,
+    },
     {
       sign: {
-        sub: request.user.sub,
+        sub,
       },
     },
   )
 
   const refreshToken = await reply.jwtSign(
-    {},
+    {
+      role,
+    },
     {
       sign: {
-        sub: request.user.sub,
+        sub,
         expiresIn: '7d',
       },
     },
