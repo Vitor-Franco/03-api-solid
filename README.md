@@ -46,3 +46,14 @@ Fazer uma aplicação parecida com o GymPass.
 1.2. Red: Escrever um teste que falhe.
 1.3. Green: Escrever o mínimo de código que faça o teste passar.
 1.4. Refactor: Refatorar o código para melhorar a legibilidade e performance.
+
+## Auth Strategy
+1. `Basic Auth` - Autenticação básica, utilizando usuário e senha. O usuário envia as informações de usuario:senha no header da requisição, com encode em base64.
+
+2. `JWT Auth` - Autenticação utilizando JWT.
+Usuário faz login, envia usuário e senha, o back-end cria um token ÚNICO, não modificável e STATELESS.
+- `Stateless`: Não armazenado em nenhuma estrutura de persistência de dados
+- `Token`: para criar o token ele utiliza uma chave secreta.
+Estrutura do Token: `Cabeçalho` + `Payload` + `Assinatura`
+Email/Senha -> (header.payload.signature)
+- `Chave secreta`: É uma string que só o back-end conhece. - 1498jxfm982jdfkljsflkasjdlfksa
