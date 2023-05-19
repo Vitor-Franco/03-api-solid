@@ -60,3 +60,9 @@ Email/Senha -> (header.payload.signature)
 
 ## RBAC (Role-Based Access Control)
 é um modelo de controle de acesso baseado em funções, onde as permissões são atribuídas com base no papel ou função que um usuário possui dentro de uma organização.
+
+## CI = Continuous Integration
+1. Integração contínua é uma prática em que os desenvolvedores mesclam as alterações no código em um repositório central de forma frequente, geralmente várias vezes por dia. Cada mesclagem é verificada por um build automatizado (incluindo testes) para detectar erros de integração o mais rápido possível.
+
+## CD = Continuous Delivery/Deployment
+1. Entrega contínua é uma abordagem na qual equipes produzem software em ciclos curtos, garantindo que o software possa ser lançado a qualquer momento e, de forma manual, com o clique de um botão. Um processo de entrega contínua visa manter o software sempre pronto para ser implantado.
